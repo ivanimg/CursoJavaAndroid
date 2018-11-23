@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">demo</string>
+    <string name="escrib">Texto de prueba para ejercicio</string>
+    <string name="enviar">Enviar</string>
+    <string name="toast">Enviar</string>
+    <string name="title_activity_2">Activity2</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
