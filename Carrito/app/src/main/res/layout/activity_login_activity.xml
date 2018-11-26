@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActicity">
+    tools:context=".LoginActivity">
 
     <TextView
         android:id="@+id/tvLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
         android:text="@string/login"
         tools:layout_editor_absoluteX="123dp"
         tools:layout_editor_absoluteY="69dp" />
@@ -18,6 +21,9 @@
         android:id="@+id/etLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="127dp"
         android:hint="@string/login"
         tools:layout_editor_absoluteX="123dp"
         tools:layout_editor_absoluteY="108dp" />
@@ -26,6 +32,10 @@
         android:id="@+id/tvPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etLogin"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="-7dp"
         android:text="@string/pass"
         tools:layout_editor_absoluteX="123dp"
         tools:layout_editor_absoluteY="169dp" />
@@ -34,7 +44,20 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="214dp"
         android:text="@string/pass"
         tools:layout_editor_absoluteX="122dp"
         tools:layout_editor_absoluteY="224dp" />
-</android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView4"
+        android:layout_toEndOf="@id/textView4"
+        android:text="@string/enviar"
+        android:onClick="enviar"
+        />
+</RelativeLayout>
